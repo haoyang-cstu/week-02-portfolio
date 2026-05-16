@@ -53,7 +53,7 @@ export default function ProjectsPage() {
       : projects.filter((p) => p.tags.includes(activeFilter));
 
   return (
-    <section className="max-w-3xl mx-auto px-6 py-16">
+    <section className="max-w-3xl mx-auto px-6 py-16 animate-fade-in-up">
       <h1 className="text-3xl font-bold mb-2 text-neutral-900">Projects</h1>
       <p className="text-neutral-600 mb-8">
         A few things I&apos;ve built. Filter by tag to narrow the list.
@@ -79,9 +79,9 @@ export default function ProjectsPage() {
         })}
       </div>
 
-      <ul className="space-y-4">
+      <ul className="grid gap-4 sm:grid-cols-2">
         {visible.map((project) => (
-          <li key={project.id}>
+          <li key={project.id} className="h-full">
             <ProjectCard
               title={project.title}
               description={project.description}

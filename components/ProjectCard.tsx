@@ -10,7 +10,7 @@ export default function ProjectCard({
   tags,
 }: ProjectCardProps) {
   return (
-    <div className="rounded-lg border border-neutral-200 p-6 hover:border-neutral-300">
+    <div className="h-full rounded-lg border border-neutral-200 p-6 transition hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-sm">
       <h2 className="text-lg font-semibold text-neutral-900">{title}</h2>
       <p className="mt-2 text-sm leading-6 text-neutral-700">{description}</p>
       <div className="mt-4 flex flex-wrap gap-2">

@@ -9,7 +9,7 @@ const skills = [
 
 export default function AboutPage() {
   return (
-    <section className="max-w-3xl mx-auto px-6 py-16">
+    <section className="max-w-3xl mx-auto px-6 py-16 animate-fade-in-up">
       <h1 className="text-3xl font-bold mb-6 text-neutral-900">About Me</h1>
 
       <p className="text-base leading-7 text-neutral-700">

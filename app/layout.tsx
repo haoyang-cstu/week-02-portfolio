@@ -40,6 +40,9 @@ export default function RootLayout({
             <Link href="/projects" className="text-sm font-medium hover:text-neutral-600">
               Projects
             </Link>
+            <Link href="/contact" className="text-sm font-medium hover:text-neutral-600">
+              Contact
+            </Link>
           </nav>
         </header>
 
