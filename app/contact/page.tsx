@@ -53,9 +53,19 @@ export default function ContactPage() {
   return (
     <section className="max-w-xl mx-auto px-6 py-16 animate-fade-in-up">
       <h1 className="text-3xl font-bold mb-2 text-neutral-900">Contact</h1>
-      <p className="text-neutral-600 mb-8">
+      <p className="text-neutral-600 mb-6">
         The fastest way to reach me is email, but you can also drop a note
         below.
+      </p>
+
+      <p className="mb-8 text-sm text-neutral-700">
+        Email:{" "}
+        <a
+          href="mailto:hao.yang@cstu.edu"
+          className="font-medium text-neutral-900 underline underline-offset-4 hover:text-neutral-600"
+        >
+          hao.yang@cstu.edu
+        </a>
       </p>
 
       {submitted && (
