@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ProjectCard from "@/components/ProjectCard";
 
 type Project = {
   id: number;
@@ -80,26 +81,12 @@ export default function ProjectsPage() {
 
       <ul className="space-y-4">
         {visible.map((project) => (
-          <li
-            key={project.id}
-            className="rounded-lg border border-neutral-200 p-6 hover:border-neutral-300"
-          >
-            <h2 className="text-lg font-semibold text-neutral-900">
-              {project.title}
-            </h2>
-            <p className="mt-2 text-sm leading-6 text-neutral-700">
-              {project.description}
-            </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {project.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="rounded bg-neutral-100 px-2 py-0.5 text-xs text-neutral-700"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
+          <li key={project.id}>
+            <ProjectCard
+              title={project.title}
+              description={project.description}
+              tags={project.tags}
+            />
           </li>
         ))}
       </ul>
